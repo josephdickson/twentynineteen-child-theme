@@ -1,0 +1,14 @@
+/* blocks.css 
+ * This stylesheet overrides Twenty Nineteen's default block styles
+ * in the editor and front end of the website -- Joseph Dickson
+ */
+
+/* Code Block */
+.entry .entry-content .wp-block-code {
+	font-size: 0.8rem;
+	max-width: 100%;
+}
+
+.editor-block-list__block-edit .wp-block-code .editor-plain-text {
+	font-size: 1.25rem;
+}
