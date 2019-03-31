@@ -74,7 +74,7 @@ function facebook_opengraph() {
 		$img_src = wp_get_attachment_image_src( $custom_logo_id , 'full' ); // converts custom logo id number into source url
 ?>
 			
-		<meta property="og:title" content="<?php echo get_bloginfo( 'description' ); ?>"/>
+		<meta property="og:title" content="<?php echo get_bloginfo( 'name' ); ?>"/>
 		<meta property="og:description" content="<?php echo $excerpt; ?>"/>
 		<meta property="og:type" content="article"/>
 		<meta property="og:url" content="<?php echo the_permalink(); ?>"/>
