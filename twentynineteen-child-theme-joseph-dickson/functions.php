@@ -16,11 +16,12 @@ function twenty_nineteen_child_theme_enqueue_styles() {
 
 // Enqueue additional CSS for the block editor and front end of the website 
 function enqueue_block_assets() {
+	$style_path = '/blocks.css';
 	wp_enqueue_style(
 		'block-overrides',
-		get_stylesheet_directory_uri() . '/blocks.css',
+		get_stylesheet_directory_uri() . $style_path,
 		null,
-		time() // Change for production
+		filemtime( get_stylesheet_directory() . $style_path )
 	);
 }
 add_action( 'enqueue_block_assets', 'enqueue_block_assets' );
