@@ -43,7 +43,7 @@ function facebook_opengraph() {
 
 	if( is_single() || is_page() ) {
 		if( has_post_thumbnail($post->ID)) {
-			$img_src = wp_get_attachment_image_url(get_post_thumbnail_id( $post->ID ), 'large');
+			$img_src = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'large');
 		} else {
 			// If no featured image is available for the post or page display the custom logo 
 			$img_src = wp_get_attachment_image_src( $custom_logo_id , 'full' ); // converts custom logo id number into into a source url
